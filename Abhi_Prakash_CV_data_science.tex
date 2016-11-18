@@ -1,0 +1,443 @@
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2008-2015 Nathaniel Johnston <nathaniel@njohnston.ca> http://www.njohnston.ca
+%
+%This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+\newlength{\outerbordwidth}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\usepackage[svgnames]{xcolor}
+\usepackage{framed}
+\usepackage{tocloft}
+
+% The following two lines are needed to fix a MacTex compatibility issue
+% Thanks to Tony Blake for finding this fix!
+\usepackage{etoolbox}
+\robustify\cftdotfill
+
+
+%-----------------------------------------------------------
+%Edit these values as you see fit
+
+\setlength{\outerbordwidth}{3pt}  % Width of border outside of title bars
+\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
+\definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
+
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{9.5in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{\vspace{8pt}
+  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+    \begin{shaded}
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+    \end{shaded}
+  }\vspace{-5pt}
+}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Abhishek Prakash}  \\
+Graduate Fellow & abp15@pitt.edu \\
+Department of Physics and Astronomy & 100 Allen Hall, 3941 O'Hara St.\\ 
+University of Pittsburgh &Pittsburgh, PA 15260\\\
+\\
+\end{tabular*}
+\\
+\vspace{-.80cm}
+
+\resheading{Highlights}\vspace*{-13pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item
+	Achieved "\textbf{The Architect}" status for Sloan Digital Sky Survey-IV for substantial contribution        towards building one of the largest astronomical surveys ever.\vspace*{-5pt}
+\item
+	\textbf{Core member} of three of the largest ongoing and future generation surveys, \textbf{SDSS-III/IV} (2012-present), \textbf{DESI} (2018), and \textbf{LSST} (2020).\vspace*{-5pt}
+
+\item
+	\textbf{Reviewer} for internationally reputed astrophysics journal. Carried out \textbf{unbiased and criticalassessment} of incoming research articles\vspace*{-5pt}
+\item
+	\textbf{Excellence} in research output culminated in \textbf{Arts and Sciences graduate fellowship} by Schoolof Arts and Sciences at the Univ. of Pittsburgh (2015,2016)\vspace*{-5pt}
+\item
+	Successfully developed, optimized, and implemented new methods for selecting the mostmassive galaxies, \textbf{leading target selection efforts} for multi-million dollar current and futurestate of the art surveys (SDSS-IV and DESI).\vspace*{-5pt}
+
+\item
+	Obtained the least error results, currently available in the field, to estimate the distances ofgalaxies by developing and optimizing machine learning algorithms (\textbf{Random forest regression,Scikit-learn}).\vspace*{-5pt}
+\item 
+Created multiple data-sets, using the expertise in cross-matching large catalogs, which were\textbf{observed successfully} as part of the survey SDSS-III/IV.\vspace*{-5pt}
+
+\item 
+\textbf{Improved sample efficiency by 20\%} while leading a team of astronomers conducting visualanalysis of the observed data.\vspace*{-5pt}
+
+\item 
+Identified bad regions in the sky using \textbf{mathematical and statistical modeling} to establisherror estimates in observations (\textbf{multivariate regression}).\vspace*{-5pt}
+
+\item 
+\textbf{Led scientific publications} and conference presentation on behalf of the collaboration.\vspace*{-5pt}
+
+\item 
+Achieved desired results (\textbf{target selection, error modeling}) while working with collaboratorsall over the world, primarily, \textbf{North America}, \textbf{Europe}, \textbf{Asia}, and \textbf{South America}.\vspace*{-5pt}
+
+\item 
+Proven track record (target selection for SDSS-III/IV and DESI ) in \textbf{handling and reducing largedata sets}.\vspace*{-5pt}
+
+\item 
+Creative problem solver (\textbf{data visualization and modelling}) and skilled in troubleshooting (IDLand python codes).\vspace*{-5pt}
+
+\item 
+Comfortable working on all platforms like, \textbf{Mac OS}, \textbf{Linux}, and \textbf{Windows}.\vspace*{-5pt}
+
+
+
+\end{itemize}\vspace*{-18pt}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Education}\vspace*{-8pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item
+	\ressubheading{University of Pittsburgh}{Pittsburgh, PA}{Ph.D. (A. B. D.) Physics}{2011 - 2017(expected)}
+	\begin{itemize}
+		\resitem{Thesis: Studying the large scale structure of the universe through LRGs}
+		\resitem{Advisor: Jeffrey A. Newman}
+	\end{itemize}
+
+\item
+\ressubheading{Ohio University}{Athens, Ohio}{}{2010 - 2011(Transferred to PITT)}
+	\begin{itemize}
+		\resitem{Project: Leptonic and Hadronic models of Fermi-detected Blazars }
+		\resitem{Advisor: Markus Boettcher}
+	\end{itemize}
+
+
+\item
+	\ressubheading{University of Hyderabad}{Hyderabad, India}{M.Sc. Physics}{2007 - 2009}
+	\begin{itemize}
+		\resitem{Master's Thesis: Quantum Mechanics in non-commutative spacetime.}
+		\resitem{Specialization in High-Energy Physics}
+	\end{itemize}
+\item
+\ressubheading{IGNOU}{New Delhi}{B.Sc. Physics}{2003 - 2007}
+	\begin{itemize}
+		\resitem{Graduated with Honors}
+         \end{itemize}
+
+
+\end{itemize}\vspace*{-18pt}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Skills}\vspace*{-13pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+
+
+\item
+\ressubheading{Machine Learning}{}{}{}
+	\begin{itemize}\vspace*{-13pt}
+		\resitem{Scikit-Learn}
+		\resitem{Random Forrest regression}
+		\resitem{Artificial Neural Networks}
+		\resitem{Support Vector Machines}
+         \end{itemize}
+
+
+\item
+\ressubheading{Statistical Data Analysis}{}{}{}
+	\begin{itemize}\vspace*{-13pt}
+		\resitem{Multivariate Regression}
+		\resitem{Mathematical modelling.}
+		\resitem{Receiver Operating Characteristic (ROC)}
+		\resitem{Bayesian Statistics}
+         \end{itemize}
+
+\item
+\ressubheading{Programming Languages and Packages}{}{}{}
+	\begin{itemize}\vspace*{-13pt}
+		\resitem{Python (Numpy, Scipy, Matplotlib, Pylab, Astropy)}
+		\resitem{Interactive Data Language (IDL)}
+		\resitem{Latex, MS Office, Keynote, Pages}
+		\resitem{Scikit-Learn}
+         \end{itemize}
+
+
+\item
+\ressubheading{Big data and programming tools}{}{}{}
+	\begin{itemize}\vspace*{-13pt}
+		\resitem{SSH, SQL, SVN, Git)}
+         \end{itemize}
+
+
+\end{itemize}\vspace*{-18pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Awards \& Honors}\vspace*{-5pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\vspace{-2pt}
+	\begin{center}\begin{tabular*}{6.6in}{l@{\extracolsep{\fill}}r}
+		\multicolumn{2}{c}{School of Arts and Sciences Graduate Fellowship \cftdotfill{\cftdotsep}2015, 2016}\\
+		\multicolumn{2}{c}{SDSS-IV/eBOSS Architect Status, The Sloan Digital Sky Survey IV\cftdotfill{\cftdotsep} 2015}\\
+		\multicolumn{2}{c}{Buhl Academy Science Fellowship \cftdotfill{\cftdotsep}2014}\\
+		
+		\vphantom{E}
+\end{tabular*}
+\end{center}\vspace*{-32pt}
+
+\resheading{Broader Activities}\vspace*{-8pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+
+
+\item
+	\ressubheading{Referee, The Astrophysical Journal }{Pittsburgh, PA}{Reviewed articles to be published in the ApJ}{2016}
+\item
+	\ressubheading{SDSS-IV/eBOSS}{Pittsburgh, PA}{ Co-President, Early Career Scientist group (ECS)}{2014 - 2016}
+	\begin{itemize}
+		\resitem{Organizing various workshops for young or new members of the collaboration}
+	\end{itemize}
+
+\item
+	\ressubheading{Buhl Academy}{Pittsburgh, PA}{ Science Fellow}{2014 - 2015}
+	\begin{itemize}
+		\resitem{Teaching Astronomy to high school students as Buhl Academy Science Fellow. Visiting classroom and teaching a part of curriculum in collaboration with a faculty member.}
+	\end{itemize}
+
+\item
+	\ressubheading{University of Pittsburgh}{Pittsburgh, PA}{ President, Association of Physics and Astronomy Graduate Students (APAGS)}{2014 - 2016}
+	\begin{itemize}
+		\resitem{Organizing various events for providing help to graduate students in their teaching and research duties.}
+	\end{itemize}
+
+
+
+\end{itemize}\vspace*{-18pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Conference Talks}\vspace*{-13pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item 
+        SDSS-IV collaboration meeting- Wisconsin, USA, 27-29 June, 2016,\vspace*{-5pt}
+         \begin{itemize}
+		\resitem{The SDSS IV: Luminous Red Galaxy clustering using photometric redshifts}
+	\end{itemize}
+\item
+	DESI collaboration meeting- Durham, UK, 20-23 June, 2016\vspace*{-5pt}
+         \begin{itemize}
+		\resitem{Improving Luminous Red Galaxy target selection for DESI using eBOSS LRGs}
+	\end{itemize}
+
+\item
+	SDSS-IV/ eBOSS collaboration meeting- Salt Lake City, UT, USA, 1-3 June, 2015\vspace*{-5pt}
+         \begin{itemize}
+		\resitem{Luminous Red Galaxy early data analysis and overview for eBOSS}
+	\end{itemize}
+\item
+	DESI meeting - Fermi National Accelerator Lab, 27-29 May, 2015\vspace*{-5pt}
+         \begin{itemize}
+		\resitem{Lessons learned from eBOSS LRGs}
+	\end{itemize}
+\item
+	225th AAS meeting - Seattle, WA, 4-8 January, 2015, BOSS special session\vspace*{-5pt}
+         \begin{itemize}
+		\resitem{The Start of SDSS-IV and eBOSS}
+	\end{itemize}
+\item
+	225th AAS meeting - Seattle, WA, 4-8 January, 2015, BOSS special session\vspace*{-5pt}
+         \begin{itemize}
+		\resitem{SDSS-IV: Exploring Large-Scale structure at High-Redshift using eBOSS LRGs}
+	\end{itemize}
+       
+\item 
+        SDSS-III/BOSS \& eBOSS collaboration meeting- Cloudcroft, NM, USA, 4-6 Dec, 2014\vspace*{-5pt}
+         \begin{itemize}
+		\resitem{Luminous Red Galaxy target selection overview for eBOSS}
+	\end{itemize}
+\item 
+        WFIRS2014, Pasadena, CA, 16-20 Nov. 2014\vspace*{-5pt}
+         \begin{itemize}
+		\resitem{Luminous Red Galaxies: Selection using optical and WISE photometry}
+	\end{itemize}
+
+\item 
+        SDSS-III/IV collaboration meeting- Park city, UT, USA, 27-29 July, 2014,\vspace*{-5pt}
+         \begin{itemize}
+		\resitem{The SDSS IV: Luminous Red Galaxy target selection for eBOSS}
+	\end{itemize}
+
+\item 
+        SDSS-IV/ eBOSS collaboration meeting- NYU, NY, USA, 13-15 March, 2014,\vspace*{-5pt}
+         \begin{itemize}
+		\resitem{Luminous Red Galaxies: Early data analysis from SDSS-III/ SEQUELS}
+	\end{itemize}
+
+\item
+	223rd AAS Meeting - Washington D.C., 5-9 January, 2014\vspace*{-5pt}
+         \begin{itemize}
+		\resitem{Improved LRG Selection Algorithms combining Optical and WISE (Infrared) Photometry}
+	\end{itemize}
+\item
+	Neighborhood Workshop on Astrophysics \& Cosmology, Pennsylvania State University, 4-5 April, 2013\vspace*{-5pt}
+         \begin{itemize}
+		\resitem{Luminous Red Galaxies: Target Selection for eBOSS and BigBOSS}
+	\end{itemize}
+            
+\end{itemize}\vspace*{-18pt}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Workshops}\vspace*{-13pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item
+	Summer School in Statistics for Astronomers - Penn State, USA, May 31-June 4, 2016\vspace*{-5pt}
+\item
+	SciCoder 2015 - New York City, 7-12 June., 2015\vspace*{-5pt}
+\item
+	Summer School on Dark Energy and Galaxy Redshift Surveys - Corfu, Greece, 12-20 Sept., 2014\vspace*{-5pt}
+\item
+	Neighborhood Workshop on Astrophysics and Cosmology, Pennsylvania State University, 4-5 April, 2013\vspace*{-5pt}
+\item
+	Winter School on Astroparticle Physics - TIFR and Bose Institute, Darjeeling, India, 10-22 Dec., 2009\vspace*{-5pt}
+\end{itemize}\vspace*{-18pt}
+
+
+\resheading{Observing Experience}\vspace*{-13pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+
+\item
+	MzLS imaging (DESI), Kitt Peak (April 16-19, 2016)\vspace*{-5pt}
+         \begin{itemize}
+		\resitem{Instrument: 4 meter Telescope}
+	\end{itemize}
+
+
+\item
+	Quasar spectroscopy, Kitt Peak (January 2011)\vspace*{-5pt}
+         \begin{itemize}
+		\resitem{Instrument: MDM Observatory, 2.4 meter Hiltner Telescope}
+	\end{itemize}
+            
+\end{itemize}\vspace*{-18pt}
+
+\resheading{Publications}\vspace*{-13pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+
+
+\item
+	The SDSS-IV: Luminous Red Galaxies Target Selection for the Extended Baryon Oscillation Spectroscopic Survey. \vspace*{-5pt}
+         \begin{itemize}
+		\resitem{The Astrophysical Journal Supplement Series, 224:34, 2016 June}
+		\resitem{Authors:- Abhishek Prakash, Tim Licquia, Jeffrey Newman, and eBOSS collaboration.}
+	\end{itemize}
+
+\item
+	 Luminous Red Galaxies: Selection and classification by combining optical and infrared photometry. \vspace*{-5pt}
+         \begin{itemize}
+		\resitem{The Astrophysical Journal, 803:105, 2015 April 20}
+		\resitem{Authors:- Abhishek Prakash, Tim Licquia, Jeffrey Newman, and Sandhya Rao.}
+	\end{itemize}
+\item  Leptonic and hadronic modeling of Fermi-detected blazars.
+	 . \vspace*{-5pt}
+         \begin{itemize}
+		\resitem{The Astrophysical Journal, 768:54, 2013 May 1}
+		\resitem{Authors:- Markus Boettcher, A. Reimer, K. Sweeney, and Abhishek Prakash.}
+	\end{itemize}            
+
+\item
+	 The SDSS-IV: Quasar Target Selection for the Extended Baryon Oscillation Spectroscopic Survey. \vspace*{-5pt}
+         \begin{itemize}
+		\resitem{arXiv:1508.04472. Published in The Astrophysical Journal Supplement)}
+		\resitem{Authors:-Adam Myers, Nathalie Palanque-Delabrouille, Abhishek Prakash, and eBOSS collaboration.}
+	\end{itemize}
+
+\item
+	 The Extended Baryon Oscillation Spectroscopic Survey: Overview and early data. \vspace*{-5pt}
+         \begin{itemize}
+		\resitem{arXiv:1508.04473 Published in The Astronomical Journal)}
+		\resitem{Authors:- Kyle Dawson, Will Percival, Jean Paul Kneib, and eBOSS collaboration.}
+	\end{itemize}
+
+\item
+	 The SDSS-IV eBOSS emission-line galaxy pilot survey.\vspace*{-5pt}
+         \begin{itemize}
+		\resitem{arXiv:1509.05045. Accepted in (Astronomy \& Astrophysics)}
+		\resitem{Authors:- Johan Comparat, Temothee Delubac, Stephney Jouvel et al.}
+	\end{itemize}
+
+\item
+	 Redshift Measurement and Spectral Classification for eBOSS Galaxies with the Redmonster Software. \vspace*{-5pt}
+         \begin{itemize}
+		\resitem{arXiv:1607.02432 Accepted for publication in The Astronomical Journal}
+		\resitem{Authors:- Timothy A. Hutchinson, Adam S. Bolton, Kyle S. Dawson, and eBOSS collaboration.}
+	\end{itemize}
+
+\item
+	The Eleventh and Twelfth Data Releases of the Sloan Digital Sky Survey: Final Data from SDSS-III. \vspace*{-5pt}
+         \begin{itemize}
+		\resitem{The Astrophysical Journal Supplement, 219:12, 2015 July 27.}
+		\resitem{Authors:- Shadab Alam, Franco D. Albareti, Carlos Allende Prieto, and the SDSS-III collaboration}
+	\end{itemize}
+
+\item
+	The Thirteenth Data Release of the Sloan Digital Sky Survey: First Spectroscopic Data from the SDSS-IV Survey MApping Nearby Galaxies at Apache Point Observatory. \vspace*{-5pt}
+         \begin{itemize}
+		\resitem{arXiv:1608.02013 Under review (The Astrophysical Journal Supplement)}
+		\resitem{Authors:- Franco D. Albareti, Carlos Allende Prieto, and the SDSS-IV collaboration}
+	\end{itemize}
+
+
+
+
+
+
+
+
+\end{itemize}\vspace*{-18pt}
+
+
+
+
+
+%\end{itemize}
+
+\end{document}
